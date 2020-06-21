@@ -232,6 +232,16 @@ function handleTileClick(event) {
     }
     
     // Middle Click
+    /*
+    Since I use the MacBook and it doesn't have middle click. 
+    So I achieve the function of middle click on left click as well. 
+    I think it will be fine since the tile is middle clicked on must be revealed, 
+    and left click on revealed tiles has no functions. 
+    
+    When users left click the hidden tile, it will perform the normal left click, 
+    and when they left click on the revealed tile, it will perform the middle click's function. 
+    */
+    
     else if (event.which === 1) {
         var direction = [[1,0],[-1,0],[0,1],[0,-1],[1,1],[-1,1],[1,-1],[-1,-1]];
         var count_flag = 0;
